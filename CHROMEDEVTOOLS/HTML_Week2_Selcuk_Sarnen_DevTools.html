@@ -1,0 +1,142 @@
+<!doctype html><html lang="tr">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title> VSCode Özet Sayfası </title> 
+  <style>
+    main {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    
+    main > h1, p, .browser {
+      margin: 10px;
+      padding: 5px;
+    }
+    
+    .browser {
+      background: white;
+    }
+    
+    .browser > h2, p {
+      margin: 4px;
+      font-size: 90%;
+    }
+    aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+    }
+    </style>
+</head> 
+<body> 
+    <main>
+        <h1>CHROME DEVTOOLS KULLANIMI</h1>
+        <aside>
+            <figure>
+              <img src="Resimler/inspect1.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>INSPECT KOMUTU</figcaption>
+              <img src="Resimler/scroll2.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>SCROLL INTO VIEW</figcaption>
+              <img src="Resimler/search3.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>DOM AĞACINDA ARAMA YAPMAK</figcaption>
+              <img src="Resimler/attributes4.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>EDITING ATTRIBUTE </figcaption>
+              <img src="Resimler/button5.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>EDITING TAG DEĞİŞTİRME</figcaption>
+              <img src="Resimler/hide6.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>HIDE KOMUTU</figcaption>
+              <img src="Resimler/global7.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption>STORE AS GLOBAL VARIABLE KOMUTU</figcaption>
+              <img src="Resimler/breakon8.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption> MODIFICATIONS1 </figcaption>
+              <img src="Resimler/breakon9.png" alt="Resmin formatini degistirin"width="300" height="360" align="right">
+              <figcaption> MODIFICATIONS2 </figcaption>
+            </figure>
+          </aside>
+      
+        <article class="browser">
+        <h2>DOM AĞACI TANIM</h2>
+        <p>DOM Ağacı Chrome DevTools üzerinden yapılan kodlamayı Browser üzerinden aktif eş 
+        zamanlı görerek değişiklik yapmamıza imkân sağlayan bir kodlama panosudur.</p>
+        </article>
+
+        <article class="browser">
+        <h2>INSPECT</h2>
+        <p>Bu pano üzerinde herhangi bir kod parçasını veya tanımlanan bir nesneyi 
+          DOM ağacında bulmak için ilk yapacağımız şey browser üzerinden bu nesneye sağ 
+          tıkladığımızda çıkan INSPECT komutunu kullanmaktır. Bunu yaptığımızda DOM konsolunda 
+          ilgili kod satırı vurgulu bir şekilde yan tarafta belirecektir.</p>
+          <br>    
+        </article>
+
+        <article class="browser">
+        <h2>SCROLL INTO VIEW</h2>
+        <p>DOMdaki kod satırının browser üzerinde hangi kısmı etkilediğini görmek için
+           ise kod satırında yer lana üç noktaya sağ tıklandığında SCROLL INTO VIEW 
+           komutunu kullanırız.</p>
+         <br> 
+        </article>
+
+        <article class="browser">
+        <h2>DOM AĞACINDA ARAMA YAPMAK</h2>
+        <p>DOM ağacında arama yapmak için Elements sekmesinde cursora odaklanarak CTRL+F komutundan 
+            yararlanırız. Aradığımız kelime veya kelime grubu sarı ile vurgulanmış olarak bulunan
+             satır veya satırlar karşımıza gelir.</P>
+          <br> 
+        </article>
+
+        <article class="browser">
+        <h2>EDITLEME</h2>
+        <p> DOM ağacındaki kodlar veya özellikleri ile ilgili olarak EDİT işlemleri yapılabilir. 
+            Herhangi bir veriyi, herhangi bir komuta dair attributeları veya komutu değiştirebiliriz. 
+            Örneğin “li” komutunun attrıbute ayarlarında yapılmış değişiklik örnekteki gibi yapılabilir. 
+            Komutun kendisi de doğrudan başka bir komutla değiştirilebilir. Örnekte “li” komutu “button”
+             komutu ile değiştirilmiştir.</p>
+          <br>
+        </article>
+
+        <article class="browser">
+        <h2>SATIR GİZLEME</h2>
+        <p> DOM ağacında herhangi bir nodu H KOMUTU ile gizleme imkânı da vardır. 
+            Gizlenmiş satırda resimdeki gibi gizlendiğine dair mesaj yer alır. 
+            Gizlemeyi kaldırmak için yine H komutunu kullanırız. </p>
+          <br>
+        </article>
+    
+        <article class="browser">
+            <h2>STORE AS GLOBAL VARIABLE</h2>
+            <p> DOM ağacında çok defa yararlanmak istediğimiz herhangi bir
+                 node’un üzerinde sağ tıkladığımızda çıkan STORE AS GLOBAL VARIABLE
+                  komutundan sonra Console kısmında “temp1” komutuna enter yaparak
+                   oluştururuz. </p>
+              <br>
+            </article>
+    
+        <article class="browser">
+            <h2>BREAK ON AND MODIFICATIONS</h2>
+            <p> Javascripti durdurarak herhangi bir komutta modifikasyon yapmak için ilgili
+                 node satırında BREAK ON > ATTRIBUTE MODIFICATIONS komutundan istifade ederiz. 
+                 Kod ağacında alt dallar oluşturmak üzere modifikasyon yapmak için mouse’a sağ
+                  tıklandığında çıkan BREAK ON > SUBTREE MODIFICATIONS komutundan istifade
+                   ederek DevTools’un çalışmasını duraklatırız. Yaptığımız eklenti sonrası 
+                   yeniden DevTools’un çalışmaya devam etmesi için RESUME SCRIPT EXECUTİON
+                    komutunu kullanırız. Benzer şekilde kod ağacında herhangi bir dalı silmek
+                     için BREAK ON > NODE REMOVAL seçeneğini kullanırız. </p>
+              <br>
+            </article>
+            <br>
+            <details> 
+                <summary> DOM AĞACI DİĞER ÖZELLİKLER VE KISAYOLLAR </summary> 
+                    <li>DOM ağacında herhangi bir nodu klavyedeki DEL KOMUTU ile silebiliriz.</li> 
+                    <li>Geri almak için CTRL+Z kombinasyonu kullanılır. </li> 
+                    <li>DOM Konsolunda satırlar arasında ok tuşları ile navigasyon yapılarak hangi 
+                        kodun browserda hangi parçaya ait olduğu da anında görülebilir.</li> 
+            </details>  
+    </main>
+</body>
+</html>
