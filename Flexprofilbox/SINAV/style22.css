@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    box-sizing:border-box;
+    background-image: url("bgimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.maincontainer{
+    width:400px;
+    height:840px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color:#9fccd8;
+    margin: auto;
+    margin-top:40px;
+    font-family: 'Ovo', serif;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    box-shadow: 5px 5px 5px 0px slategrey;
+}
+
+
+
+
+
+
+
+
+
+
+
